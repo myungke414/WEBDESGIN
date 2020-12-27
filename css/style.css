@@ -20,7 +20,7 @@ header {
     float: left;
     width:200px;
     height: 75px;
-    background-color: coral;
+    /* background-color: coral; */
 }
 .menu {
     float: left;
@@ -62,11 +62,30 @@ header {
     text-decoration: none;
     color: white;
 }
-#imgslide{
+.imgslide{
     float: right;
     width:800px;
     height:350px;
     background-color: antiquewhite;
+    position: relative;
+}
+.imgslide>a{
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.imgtext{
+    position: absolute;
+    width:300px;
+    height:50px;
+    line-height: 50px;
+    color:white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: -25px 0 0 -150px;
+    left:50%;
+    top:50%;
 }
 #contents {
     float: right;
@@ -74,9 +93,92 @@ header {
     height: 200px;
     background-color: aquamarine;
 }
+.notice{
+    float: left;
+    width:300px;
+    height: 200px;
+}
+.tab{
+    float: left;
+    width: 300px;
+}
+.tab h4{
+    float: left;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color:#fff;
+    background-color: #000;
+}
+.notice>div{
+    width: 280px;
+    border-bottom-color: #ccc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.notice ul {
+    float: left;
+    height: 30px;
+    width: 280px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.notice li span {
+    float: right;
+}
+.notice li:nth-child(2n){
+    background-color: #ccc;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+.gallery{
+    float: left;
+    width:300px;
+    height: 200px;
+}
+.gallery>div{
+    width: 280px;
+    border-bottom-color: #ccc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.gallery ul {
+    float: left;
+    height: 30px;
+    width: 280px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.gallery li:hover{
+    font-weight: bold;
+}
+.shortcut{
+    float: left;
+    width:200px;
+    height: 200px;
+}
 footer {
     float: right;
     width: 800px;
     height: 100px;
     background-color: brown;
+}
+.copy{
+    float: left;
+    width: 600px;
+    height:100px;
+}
+.sns{
+    float: right;
+    width:200px;
+    height:50px;
+}
+.family{
+    float: right;
+    width:200px;
+    height:50px;
 }
